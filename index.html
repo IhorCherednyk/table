@@ -17,7 +17,6 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -27,74 +26,168 @@
 
 <body>
 
-	<div class="wrapper main-wrap clearfix">
+	<div class="wrapper main-wrap">
 		<aside class="left-mnu">
-			<button class="toggle_mnu">
-				<span class="sandwich">
-					<span class="sw-topper"></span>
-					<span class="sw-bottom"></span>
-					<span class="sw-footer"></span>
-				</span>
-			</button>
-			<nav class="main-nav">
-				<ul>
-					<li class="active"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-				</ul>
-			</nav>
-		</aside>
-		<section class="main-content">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="main-top-panel clearfix">
+			<div class="users-wrap clearfix">
+				<button class="toggle_mnu">
+					<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
 
-						<div class="col-md-12">
+				</button>
+				<span class="users">List of Users</span></div>
+				
+				<nav class="main-nav">
+					<ul>
+						<li class="active"><a href="#"><span class="list-ico"><i class="fa fa-user" aria-hidden="true"></i></span><span class="showlist">Users</span></a></li>
+						<li><a href="#"><span class="list-ico"><i class="fa fa-envelope-o" aria-hidden="true"></i></span><span class="showlist">User Messages</span></a></li>
+						<li><a href="#"><span class="list-ico"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="showlist">New Message</span></a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content">
 
-							<span class="users">List of Users</span>
-							<div class="top-panel-rside">
-								<form action="#" class="search-form">
-									<input type="search" placeholder="Search by Name or Phone number">
-									<button class="btn-search"><i class="fa fa-search"></i></button>
-								</form>
-								<a href="#"><span class="fa fa-sign-out" aria-hidden="true"></span></a>
-								<a href="#"><span class="top-panel-client">Dave Johnson</span></a>
-								<a href="/" class="logo">
-									logo
-								</a>
-							</div>
 
-						</div>
+				<div class="main-top-panel clearfix">
+
+
+
+					<span class="users">List of Users</span>
+					<div class="top-panel-rside">
+						<form action="#" class="search-form visible-large">
+							<input type="search" placeholder="Search by Name or Phone number">
+							<button class="btn-search"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#"><span class="fa fa-sign-out" aria-hidden="true"></span></a>
+						<a href="#"><span class="top-panel-client">Dave Johnson</span></a>
+						<a href="/" class="logo">
+							logo
+						</a>
 					</div>
 
-					<div class="col-md-12">
-						<div class="table-responsive">
-							<table class="table">
-								<tbody>
-									<thead>
-										<tr>
-											<th>Full Name</th>
-											<th>Email</th>
-											<th>Mobile Phone</th>
-											<th>Registration Date</th>
-										</tr>
-									</thead>
-									<tr>
-										<td class="tb-name">Aston Morgan</td>
-										<td class="tb-email">astonmorgan@mail.com</td>
-										<td class="tb-phone">07700 900113</td>
-										<td class="tb-date">15/02/2016</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+
+				</div>
+				
+				<form action="#" class="search-form visible-small">
+					<button class="btn-search"><i class="fa fa-search"></i></button>
+					<input type="search" placeholder="Search by Name or Phone number">
+				</form>
+
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<thead>
+								<tr>
+									<th>Full Name</th>
+									<th>Email</th>
+									<th>Mobile Phone</th>
+									<th>Registration Date</th>
+								</tr>
+							</thead>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Wilton</td>
+								<td class="tb-email"><span class="fa fa-linkedin-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+							<tr>
+								<td class="tb-name"><span class="client-avatar"><img src="img/avatar.png" alt="avatar"></span>Aston Morgan</td>
+								<td class="tb-email"><span class="fa fa-facebook-square" aria-hidden="true"></span><a href="#">astonmorgan@mail.com</a></td>
+								<td class="tb-phone">07700 900113</td>
+								<td class="tb-date">15/02/2016</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="pagination-info clearfix">
+					<span class="list-info">
+						Showing 1 to 13 of 57 entries
+					</span>
+					<div class="pagination">
+						<ul>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">...</a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
 
-			
-		</section>
-	</div>
+
+
+			</section>
+		</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
